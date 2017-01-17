@@ -1,0 +1,37 @@
+{
+  "name": "zocka-maniaplanet-formatter",
+  "version": "0.2.0",
+  "description": "convert maniaplanet formatting styles to html",
+  "main": "mp-style.js",
+  "scripts": {
+    "build": "./node_modules/.bin/browserify src/mp-style.js --s MPStyle > build/mp-style.js",
+    "build-min": "./node_modules/.bin/browserify src/mp-style.js --s MPStyle | uglifyjs -c > build/mp-style.min.js",
+    "test": "./node_modules/.bin/mocha",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PRGfx/maniaplanet-style-parser.git"
+  },
+  "keywords": [
+    "maniaplanet",
+    "trackmania",
+    "formatting"
+  ],
+  "author": "zocka",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/PRGfx/maniaplanet-style-parser/issues"
+  },
+  "engines": {
+    "node": ">=4.4.5"
+  },
+  "homepage": "https://github.com/PRGfx/maniaplanet-style-parser#readme",
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "uglify-js": "^2.7.5"
+  }
+}

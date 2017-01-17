@@ -22,6 +22,7 @@ MPStyle(input, {
     * mp-shadow
     * mp-wide
     * mp-narrow
+    * mp-color
     * mp-link mp-link-l/mp-link-h/mp-link-p
 
 ## Supported Tags
@@ -36,3 +37,7 @@ MPStyle(input, {
     ```
     $009blue text, $<$900red $obold text$> and blue again
     ```
+# Building and Testing
+Install build-tools with `npm i`, build module for usage in web with `npm run build` or `npm run build-min` as `build/mp-style.js` or `build/mp-style.min.js` respectively.
+  
+Run the tests with `npm run test` or `npm run coverage` to generate the code coverage.
