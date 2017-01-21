@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/PRGfx/maniaplanet-style-parser.svg?branch=master)](https://travis-ci.org/PRGfx/maniaplanet-style-parser)
+
 # ManiaPlanet Style Parser
 
 JavaScript function to translate ManiaPlanet text-styling syntax into html.
@@ -11,6 +13,8 @@ MPStyle(input, {
     useClasses: true
 });
 ```
+Include the script e.g. from ManiaCDN:  
+`<script src="http://maniacdn.net/proni/mp-style.min.js" type="text/javascript"></script>` or `<script src="http://maniacdn.net/proni/mp-style.js" type="text/javascript"></script>`.
 
 ### Options
 * **mlProtocol**: Protocol for manialink links, defaults to `maniaplanet://`. Could be set to `tmtp://` for TMF links.
@@ -39,5 +43,5 @@ MPStyle(input, {
     ```
 # Building and Testing
 Install build-tools with `npm i`, build module for usage in web with `npm run build` or `npm run build-min` as `build/mp-style.js` or `build/mp-style.min.js` respectively.
-  
+
 Run the tests with `npm run test` or `npm run coverage` to generate the code coverage.
