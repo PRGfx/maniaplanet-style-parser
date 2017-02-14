@@ -1,6 +1,6 @@
 {
   "name": "zocka-maniaplanet-formatter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "convert maniaplanet formatting styles to html",
   "main": "src/mp-style.js",
   "types": "src/mp-style.d.ts",
