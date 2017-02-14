@@ -20,6 +20,7 @@ describe('Formatting', () => {
     it('reset with $z', () => assert.equal(MPStyle('some $iitalic$z text'), 'some <span style="font-style:italic;">italic</span> text'));
     it('formatting stacks', () => assert.equal(MPStyle('base $<$f00$iother style$> back again'), 'base <span style="font-style:italic;color:#f00;">other style</span> back again'));
     it('formatting stacks (modified base style)', () => assert.equal(MPStyle('$o$f00base $<$z$iother style$> back again'), '<span style="font-weight:bold;color:#f00;">base </span><span style="font-weight:bold;font-style:italic;color:#f00;">other style</span><span style="font-weight:bold;color:#f00;"> back again</span>'));
+    it('formatting stacks (reset color)', () => assert.equal(MPStyle('$o$f00base $<$i$0f0green$g baseColor$> back again'), '<span style="font-weight:bold;color:#f00;">base </span><span style="font-weight:bold;font-style:italic;color:#0f0;">green</span><span style="font-weight:bold;font-style:italic;color:#f00;"> baseColor</span><span style="font-weight:bold;color:#f00;"> back again</span>'));
 });
 
 describe('Colors', () => {
